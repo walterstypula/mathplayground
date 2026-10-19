@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Math Playground</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Main menu -->
+  <div id="menu" class="screen active">
+    <header class="menu-head">
+      <h1>Math Playground</h1>
+      <div class="pill">⭐ <span data-stars>0</span></div>
+      <button id="muteBtn" class="icon-btn" aria-label="Sound on or off">🔊</button>
+    </header>
+
+    <section>
+      <h2>How old are you?</h2>
+      <div id="ages" class="ages"></div>
+    </section>
+
+    <section>
+      <h2>Pick a game</h2>
+      <div id="gameList" class="game-list"></div>
+    </section>
+
+    <section>
+      <h2>My Stickers</h2>
+      <p id="stickerHint" class="sticker-hint"></p>
+      <div id="stickers" class="sticker-row"></div>
+    </section>
+  </div>
+
+  <!-- Game screen -->
+  <div id="game" class="screen">
+    <header class="game-head">
+      <button id="backBtn" class="icon-btn" aria-label="Back to menu">⬅️</button>
+      <h2 id="gameTitle"></h2>
+      <button id="sayBtn" class="icon-btn" aria-label="Read it to me">🗣️</button>
+      <div class="pill">⭐ <span data-stars>0</span></div>
+    </header>
+    <main id="stage" class="stage"></main>
+  </div>
+
+  <canvas id="confetti"></canvas>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/core.js"></script>
+  <script src="js/games/balloons.js"></script>
+  <script src="js/games/count.js"></script>
+  <script src="js/games/frog.js"></script>
+  <script src="js/games/gator.js"></script>
+  <script src="js/games/catcher.js"></script>
+  <script src="js/games/snake.js"></script>
+  <script src="js/games/pattern.js"></script>
+  <script src="js/games/meteor.js"></script>
+  <script src="js/games/memory.js"></script>
+  <script src="js/games/shop.js"></script>
+  <script src="js/games/blocks.js"></script>
+  <script src="js/games/buddies.js"></script>
+  <script src="js/games/split.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "math-games",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "C:\\Users\\walte\\AppData\\Local\\Temp\\claude\\C--repos-Math\\29fcd6ec-0af7-4958-b74d-3b95e3d576b9\\scratchpad\\serve.ps1"],
+      "port": 8765
+    }
+  ]
+}
